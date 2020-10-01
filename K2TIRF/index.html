@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- 
+##############################################################
+Ignore this boilerplate if you're just trying to edit the text.
+Skip to the part that says 'The real text begins here'
+##############################################################
+
+Based on this theme: https://github.com/broccolini/dinky , which mentioned that attribution 
+is appreciated. Thanks, broccolini!
+-->
+<html lang="en">
+  <head>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <base target="_blank">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="citation_title" content="K2TIRF">
+    <meta name="citation_author" content="Ganzinger Lab">
+    <meta name="citation_publication_date" content="2020-09-30">
+    <title>K2 TIRF - Ganzinger Lab</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/prism.css">
+    <!--[if lt IE 9]>
+    <script src="javascript/html5shiv/html5shiv.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please 
+<a href="http://browsehappy.com/">upgrade your browser</a> to improve your 
+experience.</p>
+    <![endif]-->
+    <script src="javascript/scale-fix/scale.fix.js"></script>
+    <script src="javascript/python-highlighting/prism.js"></script>
+    <script async  src="javascript/Minimal-MathJax/MathJax.js?config=TeX-AMS_CHTML"></script>
+    <script src="javascript/update_figures.js"></script>
+    <script src="javascript/reference_list/reference_list.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <script src="header.js"></script>
+      </header>
+<!-- 
+##############################################################
+The real text begins here.
+##############################################################
+ -->
+<section>
+<h1>The K2 TIRF microscope</h1>
+
+<p>Commercially available fluorescence microscopes that are compatible with single-molecule experiments are often very expensive and/or lack flexibility. In recent years, a number of open-source projects emerged within the (single-molecule) fluorescence microscopy community, facilitating the planning and setting up of a custom microscope. These projects can be combined with each other or with commercial solutions, depending on the experimental requirements, the infrastructure around the lab (workshops, instrument developers), the available budget and workforce.</p>
+<br>
+<figure id="K2 setup" style="display: inline-block;  float: center; width:60%;margin-left:10px;max-width:600px;">
+<img src="./images/K2_setup_boxedup.JPG"
+ alt="K2 setup">
+<figcaption><strong>Under the hood of the K2 TIRF microscope</strong></figcaption>
+</figure>
+<br>
+Our single-molecule TIRF microscope K2 is based on the <a href="https://hohlbeinlab.github.io/miCube/index.html">miCube</a> and includes several additions:
+<ul>
+<li>Custom emission image splitter to record images simultaneously at three different optical wavelengths </li>
+<li>Flip-in lens in the excitation path for photobleaching experiments (FRAP)</li>
+<li>qgFocus: our implementation of the <a href="http://big.umassmed.edu/wiki/index.php/PgFocus">pgFocus</a> focus stabilization system</li>
+<li>Beamshaping device (<a href="http://www.pishaper.com/">piShaper</a>) for flat-top illumination over a big field of view (see <a href="https://www.nature.com/articles/s41467-019-09064-6"> Stehr, Stein et al.</a>)</li>
+<li>Sample stage: Three-axis piezo stick-slip positioner (<a href="https://www.smaract.com/linear-stages/type/SLS-52x">Smaract SLS5252</a>) wih nanometer resolution and 30mm travel range</li>
+<li>Objective-heater and plexiglass housing for live-cell imaging</li>
+</ul>
+</p>
+<p></p>For a detailed description of the complete microscope, go to the <a href="./component_table.html" target="_self">component list</a>.</p>
+
+</section>
+<br><footer><script src="footer.js"></script></footer>
+ <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+</body>
+</html>
+ 
