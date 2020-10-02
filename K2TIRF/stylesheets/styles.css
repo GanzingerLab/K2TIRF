@@ -184,6 +184,8 @@ hr {
   margin:0 0 24px;
 }
 
+
+
 /* Images */
 
 img {
@@ -242,6 +244,13 @@ pre {
   overflow-y: hidden;
   margin-bottom: 32px;
 }
+
+div.container {
+  display:inline-block;
+  float:center
+}
+
+
 
 
 /* Tables */
@@ -306,6 +315,7 @@ table.component_list tr.homemade td{
 table.component_list td {
   padding-left: 4px;
   padding-right: 4px;
+  padding-top:6px;
   background: #eee;
   vertical-align: top;
  }
@@ -347,7 +357,8 @@ table.component_list td {
 	background: #eee;
  }
  table.component_list td:nth-child(5){
-	text-align: right;
+	text-align: left;
+	font-size:70%;
  }
  
 table.component_list_supplemental {
