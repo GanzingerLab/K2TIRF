@@ -68,97 +68,99 @@ Please note that standard mirrors and mounts, posts, clamps, rails, cage rods, s
 Schematic adapted from <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolett.8b00875">Mücksch, Blumhardt et al.</a> </figcaption>
 </figure>
 <h2>Main cube (I)</h2>
+<div style="max-width:80%;">The objective, the sample stage and the dichroic filter cube are mounted to a solid metal cube, based on the <a href="https://hohlbeinlab.github.io/miCube/index.html">miCube</a> design.<br>
+If required, the cube can be mirrored and used with excitation coming from the left, if the appropriate (left-turning) filter cube is used.</div>
 <table class="component_list">
 <tr>
 <th>id</th>
 <th>Title</th>
 <th>Description</th>
 <th>Image</th>
-<th>Ref.</th>
+<th>Notes</th>
 </tr>
 <tr class = "homemade">
 <td>1</td> <!--id-->
 <td id="fancyboxtitle_1">(modified) miCube block </td> <!--title-->
 <td><div class="discTitle">CNC milled - <a href="drawings/cube.pdf">Technical drawing</a></div> Modified dimensions and threaded holes to mount the piezo positioner on. Handy knob and magnets to keep door shut without screws.</td> <!--description-->
 <td><img src="images/cube_amolf.png" class="fancybox" id=1></td> <!--image-->
-<td><a href="https://hohlbeinlab.github.io/miCube/index.html"> miCube</a></td> <!--price-->
+<td>Possible improvement: decreasing the distance from excitation beam port to dichroic filter cube, such that also TIRF lenses with smaller focal length can be used, resulting in a bigger illuminated field-of-view</td> <!--notes-->
 </tr>
 <tr>
 <td>2</td> <!--id-->
 <td id="fancyboxtitle_2">XYZ stage</td> <!--title-->
 <td><div class="discTitle"><a href="https://www.smaract.com/linear-stages/type/SLS-52x">Smaract SLS-5252</a> linear stage with a <a href="https://www.smaract.com/control-systems-and-software/product/mcs2">MCS2 controller.</a></div></td> <!--description-->
 <td><img src="images/smaract_stage.png" class="fancybox" id=2></td></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr class="homemade">
 <td>3</td> <!--id-->
 <td id="fancyboxtitle_3">Sample holder</td> <!--title-->
 <td><div class="discTitle">CNC milled - <a href="drawings/sampleholder.pdf">Technical drawing</a></div> Sample holder for standard coverslips (22x60mm, 26x76mm) with magnets to keep sample in place</td> <!--description-->
 <td><img src="images/sampleholder.png" class="fancybox" id=3></td></td> <!--image-->
-<td></td> <!--price-->
+<td>Smaract piezo stage is tared with respect to sample holder weight by adding a constant force spring during stage assembly.</td> <!--notes-->
 </tr>
 <tr>
 <td>4</td> <!--id-->
 <td id="fancyboxtitle_4">Objective</td> <!--title-->
-<td><div class="discTitle"><a href="https://www.nikoninstruments.com/en_EU/Products/Optics/Apochromat-Objectives/CFI-Plan-Apochromat-TIRF-Series">Nikon TIRF 1.49NA HP SR</a> objective</div></td> <!--description-->
+<td><div class="discTitle"><a href="https://www.nikoninstruments.com/en_EU/Products/Optics/Apochromat-Objectives/CFI-Plan-Apochromat-TIRF-Series">Nikon TIRF 1.49NA 60x</a> objective</div></td> <!--description-->
 <td><img src="images/nikon60x.png" class="fancybox" id=4></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr class = "homemade">
 <td>5</td> <!--id-->
 <td id="fancyboxtitle_5">Thermal insulation spacer</td> <!--title-->
 <td><div class="discTitle">CNC-milled <a href="drawings/thermal_spacer.pdf">Technical drawing</a></div> POM spacer with M25 x 0.75 internal and external threads for thermal insulation of the heated objective </td> <!--description-->
 <td><img src="images/thermal_spacer2.png" class="fancybox" id=5></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>6</td> <!--id-->
 <td id="fancyboxtitle_6">Heating foil</td> <!--title-->
-<td><div class="discTitle"><a href="https://www.omega.nl/pptst/KHRA-KHLVA-KHA-SERIES.html">Omega KHLVA-104/10</a> polyimide film flexible heater</div> Wrapped around the objective and fixed with adhesive kapton foil </td> <!--description-->
+<td><div class="discTitle"><a href="https://www.omega.nl/pptst/KHRA-KHLVA-KHA-SERIES.html">Omega KHLVA-104/10</a> polyimide film flexible heater</div> Wrapped around the objective and fixed with adhesive kapton foil. See <a href="https://www.instructables.com/Objective-heater/">Objective Heater Instructable</a> </td> <!--description-->
 <td><img src="images/heaterfoil2.png" class="fancybox" id=6></td> <!--image-->
-<td><a href="https://www.instructables.com/Objective-heater/">Objective Heater Instructable</a> </td> <!--price-->
+<td style="text-align: center;"><img src="images/calibration_sensor.png" class="fancybox" id=7> Dip-in sensor to calibrate offset of objective temperature to sample temperature</td> <!--notes-->
 </tr>
 <tr class = "homemade">
 <td>7</td> <!--id-->
 <td id="fancyboxtitle_7">Temperature controller</td> <!--title-->
 <td><div class="discTitle">Custom design based on <a href="http://www.ia.omron.com/products/family/3101/">Omron E5CC</a> PID temperature controller</div> Heats the polyimide film around the objective and senses temperature using PT100 sensors  </td> <!--description-->
 <td><img src="images/heatcontroller.png" class="fancybox" id=7></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr class="homemade">
 <td>8</td> <!--id-->
 <td id="fancyboxtitle_8">Plexiglass housing</td> <!--title-->
 <td><div class="discTitle">Custom made - Technical drawings: <a href="drawings/housing_assembly.pdf">Assembly</a>, <a href="drawings/housing_basis.pdf">basis</a>, <a href="drawings/housing_lid.pdf">lid</a> and <a href="drawings/housing_spacer.pdf">spacer</a></div> Protects sample and objective from dust and airflow and improves temperature stability. Including a LED ring for brightfield imaging</td> <!--description-->
 <td><img src="images/housing.png" class="fancybox" id=8></td></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>9</td> <!--id-->
 <td id="fancyboxtitle_9">Dichroic mirror cube </td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.de/thorproduct.cfm?partnumber=DFM1/M">DFM1/M</a></div>Magnetic hot-swappable dichroic mirror is placed inside.</td> <!--description-->
 <td><img src="https://www.thorlabs.de/images/large/TTN042093-lrg.jpg" class="fancybox" id=9></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr class ="homemade">
 <td>10</td> <!--id-->
 <td id="fancyboxtitle_10">Dichroic mirror cube spacer </td> <!--title-->
 <td><div class="discTitle">Custom made - <a href="drawings/dichroic_distance.pdf">Technical drawing</a></div></td> <!--description-->
 <td><img src="images/dichroic_distance_loc.png" class="fancybox" id=10></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>11</td> <!--id-->
 <td id="fancyboxtitle_11">Dichroic mirror</td> <!--title-->
 <td><div class="discTitle">Chroma - <a href="https://www.chroma.com/products/parts/zt405-488-561-640rpcv2">ZT405/488/561/640rpc-UF2</a></div></td> <!--description-->
 <td><img src="images/dichroic_square.jpg" class="fancybox" id=11></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>12</td> <!--id-->
 <td id="fancyboxtitle_12">Neutral density filter</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=NE60A-A">NE60A-A</a></div>Preventing unwanted back-reflections within the dichroic mirror cube.</td> <!--description-->
 <td><img src="https://www.thorlabs.com/images/large/24285-lrg.jpg" class="fancybox" id=12></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <tr>
@@ -166,14 +168,14 @@ Schematic adapted from <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolet
 <td id="fancyboxtitle_13">Connector for dichroic mirror and mirror</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.de/thorproduct.cfm?partnumber=C4W-CC">C4W-CC</a></div></td> <!--description-->
 <td><img src="https://www.thorlabs.de/images/ProductGallery/C4W-CC/30mm_Cage_Cube_Connector-AV1.jpg" style="transform:scaleY(-1);" class="fancybox" id=13></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>14</td> <!--id-->
 <td id="fancyboxtitle_14">45° elliptical mirror</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.de/thorproduct.cfm?partnumber=KCB1E/M">KCB1E/M</a> and <a href="https://www.thorlabs.de/thorproduct.cfm?partnumber=BBE1-E02">BBE1-E02</a></div>The fixed mirror ensures easy adjustment of position of the emission light on the camera by adjusting the two screws.</td> <!--description-->
 <td><img src="https://www.thorlabs.de/images/large/TTN034520-lrg.jpg" class="fancybox" id=14></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 </table>
 
@@ -186,83 +188,85 @@ Schematic adapted from <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolet
 <th>Title</th>
 <th>Description</th>
 <th>Image</th>
-<th>Ref.</th>
+<th>Notes</th>
 </tr>
+<div style="max-width:80%;">Excitation path optics are assembled on a breadboard to bring the beam height up without a periscope. <br>A beam height of 64.7mm above the breadboard will match the main cube opening hole 117.4mm above the main optical table.<br>
+The excitation path is optimized for a flat-top profile illumination of the whole 221um-by-221um field of view.</div>
 <tr>
 <td>1</td> <!--id-->
 <td id="fancyboxtitle_21">Breadboard</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=MB4560/M">MB4560/M</a> breadboard on 
-<a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=P30/M">P30/M</a> posts</a></div>Excitation path optics are assembled on the breadboard to bring the beam height up without a periscope. A beam height of xxmm above the breadboard will match the main cube opening hole xx mm above the main optical breadboard/optical table.</td> <!--description-->
+<a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=P30/M">P30/M</a> posts</a> and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=PS10M">PS10M</a> spacers.</div></td> <!--description-->
 <td><img src="images/breadboard.jpg" class="fancybox" id=21></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>1</td> <!--id-->
 <td id="fancyboxtitle_21">Fiber mount</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=SM1FCA">SM1FCA</a> fiber mount in <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CP33/M">CP33/M</a> cage plate</a></div></td> <!--description-->
 <td><img src="images/fibermount.jpg" class="fancybox" id=21></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>2</td> <!--id-->
 <td id="fancyboxtitle_22">Collimator</td> <!--title-->
 <td><div class="discTitle">Thorlabs - Collimation lens <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-050-A">AC254-050-A</a> in <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> translating lens mount</div></td> <!--description-->
 <td><img src="images/cxy1.jpg" class="fancybox" id=23></td> <!--image-->
-<td></td> <!--price-->
+<td>Collimates the input beam to a 1/e2 diameter of 6mm (for 488nm), the required input diameter for the piShaper. A shearing interferometer makes the collimation process easier. <br>See <a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/9783527687732.app2"> Heintzmann, Practical Guide to Optical Alignment</a></td> <!--notes-->
 </tr>
 <tr>
 <td>3</td> <!--id-->
 <td id="fancyboxtitle_23">Quarter-Wave plate</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AQWP05M-600">AQWP05M-600</a> achromatic quarter-wave plate in <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=PRM1">PRM1</a> rotation mount</div></td> <!--description-->
 <td><img src="images/rotationmount.jpg" class="fancybox" id=24></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>4</td> <!--id-->
 <td id="fancyboxtitle_24">piShaper</td> <!--title-->
 <td><div class="discTitle">AdlOptica - <a href="http://pishaper.com/shaper.html">piShaper 6_6_VIS</a></div>Transforms the gaussian illumination into a flat-top profile</td> <!--description-->
 <td><img src="images/pishaper.png" class="fancybox" id=24></td> <!--image-->
-<td><a href="https://www.nature.com/articles/s41467-019-09064-6">Stehr, Stein et al.</td> <!--price-->
+<td><a href="https://www.nature.com/articles/s41467-019-09064-6">Stehr, Stein et al.</td> <!--notes-->
 </tr>
 <tr>
 <td>5</td> <!--id-->
-<td id="fancyboxtitle_25">3x beam expander</td> <!--title-->
-<td><div class="discTitle">Thorlabs - 75mm and -25mm lenses in a cage system with <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mounts and a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KB25/M">KB25/M</a> kinematic base</div>Magnifies the beam diameter three-fold and can be easily swapped or removed due to its magnetic kinematic base. Rased up to 64.7mm beam height with standard adapter plates.</td> <!--description-->
+<td id="fancyboxtitle_25">2.5x beam expander</td> <!--title-->
+<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-100-A">AC254-100-A</a> 100mm and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=ACN254-040-A">ACN254-040-A</a> -40mm lenses in a cage system with <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mounts and a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KB25/M">KB25/M</a> kinematic base</div>Magnifies the beam diameter 2.5fold and can be easily swapped or removed due to its magnetic kinematic base. Raised up to 64.7mm beam height with standard adapter plates.</td> <!--description-->
 <td><img src="images/telescope.png" class="fancybox" id=25></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>6</td> <!--id-->
 <td id="fancyboxtitle_26">FRAP lens flip mount</td> <!--title-->
-<td><div class="discTitle">Thorlabs - FRAP lens <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-150-A">AC254-150</a> in a motorized flip mount <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=MFF101/M">MFF101/M </a></div>TIRF lens to focus excitation light on back-focal plane of objective. 200mm focal length.</td> <!--description-->
+<td><div class="discTitle">Thorlabs - FRAP lens <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-150-A">AC254-150</a> in a motorized flip mount <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=MFF101/M">MFF101/M </a></div>FRAP lens to focus excitation light in the sample plane for bleaching experiments.</td> <!--description-->
 <td><img src="images/flipmount.jpg" class="fancybox" id=26></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <td>7</td> <!--id-->
 <td id="fancyboxtitle_27">TIRF angle stage</td> <!--title-->
 <td><div class="discTitle">Thorlabs - Motorized stage <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KMTS25E/M">MTS25E/M</a> bundle</div>Motorized control over incident angle to change between TIRF, HILO and epifluorescence illumination</td> <!--description-->
 <td><img src="images/stage.jpg" class="fancybox" id=27></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <td>8</td> <!--id-->
 <td id="fancyboxtitle_28">TIRF angle cage assembly</td> <!--title-->
 <td><div class="discTitle">Thorlabs - Right-angle elliptical mirror mount <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KCB1E/M">KCB1E/M</a> and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mount on cage rods. 
 </div>Mounting mirror and lens onto one assembly allows to keep the focal point of the TIRF lens to overlap with the objective's back focal plane for all incident angles.</td> <!--description-->
 <td><img src="images/stageassembly.png" class="fancybox" id=28></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <td class="homemade">9</td> <!--id-->
 <td id="fancyboxtitle_29">Cage assembly adapter plate</td> <!--title-->
 <td><div class="discTitle">CNC-milled - <a href="drawings/kmts25e_adapter.pdf">Technical drawing</a></div>Cage assembly is mounted onto the plate with with <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CP02B"> CP02B mounting brackets</a>  and raised to 64.7mm beam height.</td> <!--description-->
 <td><img src="images/kmts25e_adapter.png" class="fancybox" id=29></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>10</td> <!--id-->
 <td id="fancyboxtitle_30">TIRF lens</td> <!--title-->
 <td><div class="discTitle">Edmund Optics - <a href="https://www.edmundoptics.com/">LENS ACH 25x250 VIS 0 Inked</a></div>TIRF lens in CXY1 mount to focus excitation light on back-focal plane of objective. 250mm focal length.</td> <!--description-->
 <td><img src="images/tirflens.png" class="fancybox" id=30></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 </table>
 
@@ -273,13 +277,13 @@ Schematic adapted from <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolet
 <th>Title</th>
 <th>Description</th>
 <th>Image</th>
-<th>Ref.</th>
+<th>Notes</th>
 </tr>
 <td>1</td> <!--id-->
 <td id="fancyboxtitle_40">Tube lens</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=TTL200-A">TTL200-A</a> tube lens in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY2">CXY2</a> mount.</div>200 mm focal length</td> <!--description-->
 <td><img src="images/tubelens.png" class="fancybox" id=40></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td class="homemade">2</td> <!--id-->
@@ -287,38 +291,45 @@ Schematic adapted from <a href="https://pubs.acs.org/doi/abs/10.1021/acs.nanolet
 <td><div class="discTitle">Custom made - <a href="drawings/aperture.pdf">Technical drawing</a> with <a href="https://www.newport.com/p/SM-25">Newport SM-25</a> as micrometer drives</div>The aperture is placed in the image plane and 
 restricts the image horizontally so up to three separate, spatially identical images can be displayed on a single camera.</td> <!--description-->
 <td><img src="images/aperture.png" style="bottom:10px;" class="fancybox" id=41></td> <!--image-->
-<td></td> <!--price-->
+<td>Cropping the image in the horizontal dimension provides a bit more wiggle room in the emission image splitting optics, which would otherwise be prone to cause vignetting/shading of the image.</td> <!--notes-->
 </tr>
 <tr>
-<td>3</td> <!--id-->
-<td id="fancyboxtitle_42">4f system</td> <!--title-->
-<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC508-300-A">2" AC508-300-A</a> lens in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LM2XY/M">LMXY2</a> mount 
-and three 1" AC254-300-A lenses (two <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-300-A">unmounted</a>, one <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-300-A-ML">mounted</a>) in <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LMR1/M"> LMR1/M</a> fixed lens mounts.</div>
-4f-system to gain enough space to include dichroic mirrors and filters for separating the color channels.</td> <!--description-->
-<td><img src="" class="fancybox" id=42></td> <!--image-->
-<td></td> <!--price-->
+<td class="homemade">3</td> <!--id-->
+<td id="fancyboxtitle_41">Mounting plate for adjustable aperture</td> <!--title-->
+<td><div class="discTitle">Custom made - <a href="drawings/aperture_adapter.pdf">Technical drawing</a></div></td> <!--description-->
+<td><img src="images/aperture_adapter.png" style="bottom:10px;" class="fancybox" id=41></td> <!--image-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>4</td> <!--id-->
-<td id="fancyboxtitle_43">Compact (dichroic) mirrors mounts</td> <!--title-->
-<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KMSS/M">KMSS/M</a> and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KMS/M">KMS/M</a> kinematic mirror mounts </div></td> <!--description-->
-<td><img src="images/kmss.png" class="fancybox" id=43></td> <!--image-->
-<td></td> <!--price-->
+<td id="fancyboxtitle_42">4f system</td> <!--title-->
+<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC508-300-A">2" AC508-300-A</a> lens in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LM2XY/M">LMXY2</a> mount 
+and three <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=AC254-300-A">1" AC254-300-A lenses</a> in <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LMR1/M"> LMR1/M</a> fixed lens mounts.</div>
+4f-system to gain enough space to include dichroic mirrors and filters for separating the color channels.</td> <!--description-->
+<td><img src="images/emission_splitter_close.png" class="fancybox" id=42></td> <!--image-->
+<td><img src="images/4fsystem.jpg" class="fancybox" id=42>Three individual lenses make it easy to ensure focusing  of the same z-plane for the different wavelengths.</td> <!--notes-->
 </tr>
 <tr>
 <td>5</td> <!--id-->
-<td id="fancyboxtitle_44">Image splitter dichroic mirrors</td> <!--title-->
-<td><div class="discTitle">Chroma - <a href="https://www.chroma.com/products/parts/zt561rdc">ZT561rdc</a> and <a href="https://www.chroma.com/products/parts/zt640rdc">ZT640rdc</a></div></td> <!--description-->
-<td><img src="images/emission_splitter.png" class="fancybox" id=44></td> <!--image-->
-<td></td> <!--price-->
+<td id="fancyboxtitle_43">Compact (dichroic) mirrors mounts</td> <!--title-->
+<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KMSS/M">KMSS/M</a> and <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KMS/M">KMS/M</a> kinematic mirror mounts </div></td> <!--description-->
+<td><img src="images/kmss.png" class="fancybox" id=43></td> <!--image-->
+<td>Mounting the dichroic mirror mounts onto a kinematic base <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KB25/M">KB25/M</a> makes the alignment process easier and allows swapping dichroic mirrors. </td> <!--notes-->
 </tr>
 <tr>
 <td>6</td> <!--id-->
+<td id="fancyboxtitle_44">Image splitter (dichroic) mirrors</td> <!--title-->
+<td><div class="discTitle">Chroma - <a href="https://www.chroma.com/products/parts/zt561rdc">ZT561rdc</a> and <a href="https://www.chroma.com/products/parts/zt640rdc">ZT640rdc</a> in 26mm x 38mm and Thorlabs <a href="https://www.thorlabs.de/thorproduct.cfm?partnumber=BBSQ1-E02">BBSQ1-E02</a></div></td> <!--description-->
+<td><img src="images/emission_splitter.png" class="fancybox" id=44></td> <!--image-->
+<td>Mirrors are glued centrally onto the mounts, dichroic mirrors at the edge, using two-component silicone glue which stays flexible. This prevents the introduction of strain on the dichros.</td> <!--notes-->
+</tr>
+<tr>
+<td>7</td> <!--id-->
 <td id="fancyboxtitle_45">Emission filters</td> <!--title-->
 <td><div class="discTitle"><a href="https://www.semrock.com/filterdetails.aspx?id=ff01-525/30-25">Semrock 525/30  BrightLine</a>, <a href="https://www.chroma.com/products/parts/et595-50m"> Chroma ET595/50m</a> 
 and <a href="https://www.semrock.com/filterdetails.aspx?id=ff01-680/42-25">Semrock 680/42 BrightLine</a></div></td> <!--description-->
-<td><img src="images/.png" class="fancybox" id=45></td> <!--image-->
-<td></td> <!--price-->
+<td><img src="images/emission_splitter_close.png" class="fancybox" id=45></td> <!--image-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>7</td> <!--id-->
@@ -326,7 +337,7 @@ and <a href="https://www.semrock.com/filterdetails.aspx?id=ff01-680/42-25">Semro
 <td><div class="discTitle"><a href="https://www.photometrics.com/products/prime-family/primebsi">Teledyne Photometrics prime BSI sCMOS camera</a></div>2048-by-2048 pixels, 
 with <a href="https://www.aquatuning.nl/waterkoeling/sets-en-systemen/externe-sets/22164/alphacool-eiswand-360-solo-black?c=4788">Alphacool Eiswand</a> watercooling.</td> <!--description-->
 <td><img src="images/primebsi.png" class="fancybox" id=46></td> <!--image-->
-<td><a href="https://www.photometrics.com/applications/customer-stories/tirf-microscopy-bsi-ganzinger"><Prime BSI customer story</a></td> <!--price-->
+<td><a href="https://www.photometrics.com/applications/customer-stories/tirf-microscopy-bsi-ganzinger">Prime BSI customer story</a></td> <!--notes-->
 </tr>
 </table>
 
@@ -351,7 +362,7 @@ Alignment tips:<br>
 <th>Title</th>
 <th>Description</th>
 <th>Image</th>
-<th>Ref.</th>
+<th>Notes</th>
 </tr>
 <tr>
 <tr class="homemade">
@@ -359,7 +370,7 @@ Alignment tips:<br>
 <td id="fancyboxtitle_50">qgFocus device</td> <!--title-->
 <td><div class="discTitle">Custom made focus lock with a <a href="https://www.parallax.com/product/28317">TSL1401</a> linescan sensor on a Thorlabs <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KM100B/M">KM100B/M</a> mount.</div> 128-pixel resolution with 63.5um (h) x 55.5um (w) pixels in post-mountable housing with USB output port</td> <!--description-->
 <td><img src="images/qgfocus.png" class="fancybox" id=50></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>2</td> <!--id-->
@@ -367,22 +378,22 @@ Alignment tips:<br>
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CPS808S">CPS808S</a> collimated laser diode 808nm, 2.5mW, mounted in a 
 <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=KAD8F">KAD8F</a> in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mount</div></td> <!--description-->
 <td><img src="images/808.jpg" class="fancybox" id=51></td></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>3</td> <!--id-->
 <td id="fancyboxtitle_52">Zero aperture iris</td> <!--title-->
-<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=D12SZ">D12SZ</a> in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LM1XY/M">LMXY1</a> mount</div> To clean up the infrared laser output</td> <!--description-->
+<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=D12SZ">D12SZ</a> in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mount</div> To clean up the infrared laser output</td> <!--description-->
 <td><img src="images/iris.jpg" class="fancybox" id=52></td></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>4</td> <!--id-->
 <td id="fancyboxtitle_53">TIRF lens (infrared)</td> <!--title-->
-<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LA1908-780">LA1908-780</a> lens in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LM1XY/M">LMXY1</a> mount 
+<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LA1908-780">LA1908-780</a> lens in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mount 
 </div>Focuses the infrared laser onto the back focal plane of the objective</td> <!--description-->
 <td><img src="images/tirflens_infra.jpg" class="fancybox" id=53></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>5</td> <!--id-->
@@ -390,43 +401,43 @@ Alignment tips:<br>
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=NE13A-B">NE13A-B</a>
 </div>Attenuates the infrared laser (remove during alignment!)</td> <!--description-->
 <td><img src="images/ne13a-b.jpg" class="fancybox" id=54></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>6</td> <!--id-->
 <td id="fancyboxtitle_55">Beamsplitter cube angle stage (infrared)</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CCM1-BS014/MM">CCM1-BS014/M</a> cage-mounted beamsplitter cube</div> Redirects reflected infrared laser towards line sensor</td> <!--description-->
 <td><img src="images/beamsplitter.jpg" class="fancybox" id=55></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>6</td> <!--id-->
 <td id="fancyboxtitle_56">Dichroic mirror</td> <!--title-->
 <td><div class="discTitle">Chroma - <a href="https://www.chroma.com/products/parts/zt775sp-2p">ZT775sp2-2p-UF1</a> on kinematic mirror mount</div> Couples in the focus lock laser into the excitation path </td> <!--description-->
 <td><img src="images/dichroic_square.jpg" class="fancybox" id=56></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>7</td> <!--id-->
 <td id="fancyboxtitle_58">Camera lens (infrared)</td> <!--title-->
-<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=">xx</a> lens in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mount 
-</div>Focuses the infrared laser onto the back focal plane of the objective</td> <!--description-->
+<td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=LA1708-780">LA1708-780</a> lens in a <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=CXY1">CXY1</a> mount 
+</div>Focuses the infrared laser onto the line sensor</td> <!--description-->
 <td><img src="images/tirflens_infra.jpg" class="fancybox" id=58></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>8</td> <!--id-->
 <td id="fancyboxtitle_57">Bandpass filter</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.com/thorproduct.cfm?partnumber=FB800-40">FB800-40</a> </div> </td> <!--description-->
 <td><img src="images/bandpass.jpg" class="fancybox" id=57></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <tr>
 <td>9</td> <!--id-->
 <td id="fancyboxtitle_59">IR viewing disk</td> <!--title-->
 <td><div class="discTitle">Thorlabs - <a href="https://www.thorlabs.de/thorproduct.cfm?partnumber=VRC2D1">VRC2D1</a> mounted in cage plate or small lens tube</div> Indispensable for the alignment procedure</td> <!--description-->
 <td><img src="images/irdisk.jpg" class="fancybox" id=59></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 </table>
 
@@ -437,33 +448,33 @@ Alignment tips:<br>
 <th>Title</th>
 <th>Description</th>
 <th>Image</th>
-<th>Ref.</th>
+<th>Notes</th>
 </tr>
 <td>1</td> <!--id-->
 <td id="fancyboxtitle_71">Laser triggering</td> <!--title-->
 <td><div class="discTitle">Custom made laser trigger box </div>Documentation to follow</td> <!--description-->
 <td><img src="images/triggerbox.png" class="fancybox" id=71></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <td>2</td> <!--id-->
 <td id="fancyboxtitle_71">Laser box</td> <!--title-->
 <td><div class="discTitle">Hübner Photonics - <a href="https://hubner-photonics.com/products/lasers/laser-combiners/c-flex/">C-FLEX with AOM for the 561nm DPSSL laser</a></div>405nm (140mW), 488nm (200mW), 561nm (220mW) and 638nm (195mW)</td> <!--description-->
 <td><img src="images/cflex.png" class="fancybox" id=71></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <td>3</td> <!--id-->
 <td id="fancyboxtitle_72">Fixed frequency source</td> <!--title-->
 <td><div class="discTitle">AA Opto Electronic - <a href="http://www.aaoptoelectronic.com/our-products/rf-drivers-for-modulators-fixed-frequency-shifters/"> MODA110-B251k-304560</a> 
 </div>RF frequency driver for the acousto optical modulator (AOM) controlling the 561nm DPSSL laser </td> <!--description-->
 <td><img src="images/aaoptoelectronics.png" class="fancybox" id=72></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 <td>4</td> <!--id-->
 <td id="fancyboxtitle_73">Single mode fiber</td> <!--title-->
 <td><div class="discTitle">Qioptiq - <a href="https://www.excelitas.com/product/kineflex-fiber-delivery-system">kineFLEX-HPV-P-3-S-405..640-0.7-0.7-P0</a> 
 </div>Single mode polarization maintaining fiber and fiber coupler </td> <!--description-->
 <td><img src="images/fiber.png" class="fancybox" id=73></td> <!--image-->
-<td></td> <!--price-->
+<td></td> <!--notes-->
 </tr>
 </table>
 

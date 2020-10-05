@@ -333,7 +333,7 @@ table.component_list td {
 	width: 158px;
  }
  table.component_list th:nth-child(5){
-	width: 86px;
+	width: 260px;
  }
  
  table.component_list td:nth-child(1){
@@ -357,8 +357,8 @@ table.component_list td {
 	background: #eee;
  }
  table.component_list td:nth-child(5){
-	text-align: left;
-	font-size:70%;
+	font-size:80%;
+	line-height: 1.2;
  }
  
 table.component_list_supplemental {
