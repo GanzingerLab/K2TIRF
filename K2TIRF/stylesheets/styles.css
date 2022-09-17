@@ -361,6 +361,12 @@ table.component_list td {
 	line-height: 1.2;
  }
  
+  table.component_list td:nth-child(6){
+	font-size:80%;
+	line-height: 1.2;
+	padding-bottom:10px;
+ }
+ 
 table.component_list_supplemental {
   width: 95%;
   max-width: 900px;
