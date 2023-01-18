@@ -52,13 +52,14 @@ The real text begins here.
  -->
 <section>
 <h1>Ganzinger Lab - K2 TIRF microscope</h1>
-<div style="max-width:85%;">
-Commercially available fluorescence microscopes that are compatible with single-molecule experiments are often very expensive and lack flexibility. <br>
-In recent years, a number of open-source projects emerged within the (single-molecule) fluorescence microscopy community, facilitating the planning and setting up of a custom microscope. <br>
-These projects can be combined with each other or with commercial solutions, depending on the experimental requirements, the infrastructure around the lab (workshops, instrument developers), the available budget and workforce.<br>
+<div style="max-width:75%;">
+Commercially available fluorescence microscopes that are compatible with single-molecule experiments are often very expensive and lack flexibility. In recent years, a number of open-source projects emerged within the (single-molecule) fluorescence microscopy community, facilitating the planning and setting up of a custom microscope.
+These projects can be combined with each other or with commercial solutions, depending on the experimental requirements, the infrastructure around the lab (workshops, instrument developers), the available budget and workforce. <br>
 <br>
-In our multicolor single-molecule TIRF microscope 'K2' we opt for commercial solutions for parts which don't need the maximum flexibility, and are much cheaper or much faster obtained than a comparable custom-made solution. <br>
+In our multicolor single-molecule TIRF microscope 'K2' we opt for commercial solutions for parts which don't need the maximum flexibility, and are cheaper or much faster obtained than a comparable custom-made solution. <br>
 Whenever available, we base our custom-made solutions on existing open-source projects to save time and costs in the instrument development process.<br>
+More information, including detailed step-by-step build instructions are available in our preprint <br>
+<a href="https://www.biorxiv.org/content/10.1101/2022.12.19.521031v2">C. Niederauer, M. Seynen, J. Zomerdijk, M. Kamp, K. A. Ganzinger, <br>The K2: Open-source simultaneous triple-color TIRF microscope for live-cell and single-molecule imaging (bioRxiv, 2022)</a>
 </div>
 <br>
 <div class="container">
@@ -67,11 +68,12 @@ Whenever available, we base our custom-made solutions on existing open-source pr
 </div>
 <br>
 
-<div style="max-width:85%;">Our single-molecule TIRF microscope K2 has no conventional microscope body, instead it is based on the <a href="https://hohlbeinlab.github.io/miCube/index.html">miCube project</a>. 
+<div style="max-width:75%;">Our single-molecule TIRF microscope K2 has no conventional microscope body, instead it is based on the <a href="https://hohlbeinlab.github.io/miCube/index.html">miCube project</a>. 
 This allows for a much smaller footprint and budget, while still providing the required mechanical stability. <br>
 For the laser excitation we chose a commercial solution for the hardware (<a href="https://hubner-photonics.com/products/lasers/laser-combiners/c-flex/">Cobolt C-Flex</a>), which provides reasonable flexbility in terms of adding and changing laser frequencies, and developed a custom-made laser trigger box. <br>
 In order to record images simultaneously at three different optical wavelengths, we included a self-built emission image splitter in the emission pathway and combined it with a 60x magnification objective (<a href="https://www.microscope.healthcare.nikon.com/en_EU/products/optics/cfi-apochromat-tirf-series">Nikon Apo TIRF 60x 1.49NA</a> 
 and a 2048-by-2048px sCMOS camera (<a href="https://www.photometrics.com/applications/customer-stories/tirf-microscopy-bsi-ganzinger">Teledyne Photometrics Prime BSI</a>) to retain a big field of view. 
+<br>
 <br>Further additions to the setup include:<ul>
 <li>Flip-in lens in the excitation path for photobleaching experiments (FRAP)</li>
 <li>qgFocus: our implementation of the <a href="http://big.umassmed.edu/wiki/index.php/PgFocus">pgFocus</a> focus stabilization system</li>
